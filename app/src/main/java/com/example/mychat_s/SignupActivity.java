@@ -64,7 +64,7 @@ public class SignupActivity extends AppCompatActivity {
         database = FirebaseDatabase.getInstance();
         reference = database.getReference();
         firebaseStorage = FirebaseStorage.getInstance();
-
+storageReference = firebaseStorage.getReference();
         imageViewCircle = findViewById(R.id.imageViewCircle);
         editTextEmailSignup = findViewById(R.id.editTextEmailSignup);
         editTextPasswordSignup = findViewById(R.id.editTextPasswordSignup);
